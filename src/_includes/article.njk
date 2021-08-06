@@ -1,0 +1,11 @@
+---
+layout: 'base.njk'
+---
+<section class="post">
+<h1 class="f-head">{{ title }}<h1>
+<h4 class="color-lt">By {{ author }} on {{ date | postDate }}</h4>
+<img src={{ image }} alt={{ imageAlt }} class="post-image">
+<div class="post-body">
+{{ content | safe }}
+</div>
+</section>
