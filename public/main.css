@@ -87,7 +87,6 @@ h6 {
 	flex-direction: row;
 }
 .nav-logo {
-	border-radius: 50%;
 	display: inline;
 	width: 50px;
 	padding-inline: 0.5em;
