@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&family=Rubik:wght@400;900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="/media/favicon.ico">
+    <title>Legend Coder</title>
+</head>
+<body>
+<header>
+        <div class="navbar">
+            <div class="nav-wrapper">
+                <a href="#" class="logo"><img src="/media/me.jpg" class="nav-logo"><h2>Legend Coder</h2></a>
+                <input type="checkbox" class="nav-toggle" id="nav-toggle">
+                <ul class="nav">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Blog</a></li>
+                </ul>
+                <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+            </div>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="hero">
+            <h1 class="section-title">Welcome to the 'Legend Coder Coder' blog!</h1>
+            <p>I use this space to document my adventures in coding with some tips and tricks that I found helpful and cheatsheets of some of the important topics that are essential in coding.</p>
+            <p>Below are some of my favourite articles, or you can go to the blog page to see my most recent posts.</p>
+            <div class="flex-group">
+              <a href="#featured-articles" class="hero-link">Featured articles</a>
+              <a href="./blog.html" class="hero-link">Most recent articles</a>
+            </div>
+        </div>
+        <div>
+            <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="hero-img">
+        </div>
+    </section>
+    <section class="featured-section">
+        <div class="featured-div">
+            <h1 class="f-head">Featured</h1>
+            
+                <div class="article">
+                    <div><img src=https://picsum.photos/300/250 alt=This is a test class="article-img"></div>
+                    <div class="article-details">
+                        <h2 class="less-margin">My Fifth Article</h2>
+                        <h5 class="less-margin color-lt">By Atharva Kunte on 15 Jun 2021</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
+                        <a href=/blog/2021-06-15-my-fifth-article/ class="article-link">Continue reading</a>
+                    </div>
+                </div>
+            
+                <div class="article">
+                    <div><img src=https://picsum.photos/300/250 alt=This is a test class="article-img"></div>
+                    <div class="article-details">
+                        <h2 class="less-margin">My Third Article</h2>
+                        <h5 class="less-margin color-lt">By Atharva Kunte on 28 May 2021</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
+                        <a href=/blog/2021-05-28-my-third-article/ class="article-link">Continue reading</a>
+                    </div>
+                </div>
+            
+                <div class="article">
+                    <div><img src=https://picsum.photos/300/250 alt=This is a test class="article-img"></div>
+                    <div class="article-details">
+                        <h2 class="less-margin">My Second Article</h2>
+                        <h5 class="less-margin color-lt">By Atharva Kunte on 15 May 2021</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
+                        <a href=/blog/2021-05-15-my-second-article/ class="article-link">Continue reading</a>
+                    </div>
+                </div>
+            
+                <div class="article">
+                    <div><img src=https://picsum.photos/300/250 alt=This is a test class="article-img"></div>
+                    <div class="article-details">
+                        <h2 class="less-margin">My First Article</h2>
+                        <h5 class="less-margin color-lt">By Atharva Kunte on 1 May 2021</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
+                        <a href=/blog/2021-05-01-my-first-article/ class="article-link">Continue reading</a>
+                    </div>
+                </div>
+            
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            © Copyright <span id="yr"></span> Legend Coder
+        </div>
+    </footer>
+    <script>
+        let year = document.getElementById('yr').innerHTML = new Date().getFullYear();
+    </script>    
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>
